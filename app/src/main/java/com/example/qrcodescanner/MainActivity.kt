@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity() {
 
             val scanner = IntentIntegrator(this)
 
+            scanner.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE)
+            scanner.setBeepEnabled(false)
             scanner.initiateScan()
 
 
